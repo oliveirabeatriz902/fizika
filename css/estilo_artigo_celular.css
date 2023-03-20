@@ -1,0 +1,90 @@
+body{
+    background-color: #F5F5F5;
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-family: Comic Sans MS, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 30px;
+}
+
+p{
+    font-family: Comic Sans MS, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: justify;
+    text-indent: 50px;
+    color: black;
+}
+
+h3{
+    font-family: Comic Sans MS, Helvetica, sans-serif; 
+    color: #29cbdb;
+
+}
+
+#introducao{
+    margin-top: 50px;
+}
+
+.conteudo{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.base_celular{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagem_celular{
+    position: relative;
+}
+
+.card_camera{
+    position: absolute; /* define a posição absoluta para a imagem */
+    top: 70px; /* posiciona a imagem no topo do elemento pai */
+    left: 320px; /* posiciona a imagem à esquerda do elemento pai */
+    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
+    width: 4%;
+}
+
+.card_gps{
+    position: absolute; /* define a posição absoluta para a imagem */
+    top: 70px; /* posiciona a imagem no topo do elemento pai */
+    left: 390px; /* posiciona a imagem à esquerda do elemento pai */
+    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
+    width: 4%;
+}
+
+.card_ligacao{
+    position: absolute; /* define a posição absoluta para a imagem */
+    top: 150px; /* posiciona a imagem no topo do elemento pai */
+    left: 355px; /* posiciona a imagem à esquerda do elemento pai */
+    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
+    width: 4%;
+}
+
+.card_camera:hover{
+    border: 2px solid orange;
+    border-radius: 6px;
+}
+
+.card_gps:hover{
+    border: 2px solid orange;
+    border-radius: 6px;
+}
+
+.card_ligacao:hover{
+    border: 2px solid orange;
+    border-radius: 6px;
+}
+
+a:hover{
+    background-color: orange;
+}
