@@ -9,12 +9,28 @@
         <meta name="description" content="Escrever aqui o textinho">
         <meta name="keywords" content="celular, física, mecânica quântica">
 
-        <link href="style.css" rel="stylesheet">
+        <link href="../css/estilo_artigo_celular.css" rel="stylesheet">
 
     </head>
 
     <body>
         
+        <header class="menu_superior">
+            <nav>
+                <ul>
+                    <a>
+                        <li href="#" class="botao_menu_superior">Página Inicial</li>
+                    </a>
+                    <a>
+                        <li href="#" class="botao_menu_superior">Artigos</li>
+                    </a>
+                    <a>
+                        <li href="#" class="botao_menu_superior">Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
         <section class="conteudo">
 
             <h1>Como a Física explica o celular?</h1>
@@ -33,17 +49,17 @@
             <br>
 
             <div class="imagem_celular">
-                <img src="base_celular.png" class="base_celular">
+                <img src="../img/base_celular.png" class="base_celular">
                 <a href="#camera" class="link_camera">
-                    <img src="card_camera.png" class="card_camera">
+                    <img src="../img/card_camera.png" class="card_camera">
                 </a>
                 
                 <a href="#gps" class="link_gps">
-                    <img src="card_gps.png" class="card_gps">
+                    <img src="../img/card_gps.png" class="card_gps">
                 </a>
 
                 <a href="#ligacao" class="link_ligacao">
-                    <img src="card_ligacao.png" class="card_ligacao">
+                    <img src="../img/card_ligacao.png" class="card_ligacao">
                 </a>
 
                 
@@ -53,13 +69,61 @@
             <section id="camera"></section>
             <h3>Vamos aprender como funciona a câmera do celular do ponto de vista da Física</h3>
             
-            <p>O GPS (Global Positioning System - Sistema de Posicionamento Global) é um sistema que
-            usa por volta de 30 satélites orbitando a Terra para determinar a nossa posição.</p>
+            <p>Texto câmera aqui</p>
 
             <section id="gps"></section>
             <h3>GPS</h3>
 
-            <p>Texto câmera aqui</p>
+            <p>Você já se perguntou como o GPS sabe exatamente onde estamos? Independentemente
+            de sua resposta, é muito provável que já tenha utilizado o GPS para viajar, 
+            ir a um restaurante, parque ou qualquer outro lugar desconhecido. Esta 
+            tecnologia se tornou essencial em nossas vidas e é útil tanto para pedestres 
+            quanto para motoristas. Neste artigo vamos entender como a Física explica o 
+            funcionamente deste dispositivo super importante. Pode até parecer mágica, 
+            mas é simplesmente ciência!
+
+            <h4>Entendendo o GPS</h4>
+            
+            <p>O termo GPS vem do inglês <em>Global Positioning System</em>, que significa 
+            Sistema de Posicionamento Global, no qual 24 satélites orbitam a Terra, 
+            fornececendo sinais constantemente para o seu celular, por exemplo, fazendo 
+            com que o mesmo seja capaz de calcular sua posição no globo terrestre.</p>
+            
+            <img src="satelites_orbitando_terra.png" class="satelites_orbitando_terra">
+
+            <p>Agora vamos introduzir um pouco de matemática para começar a entender como o 
+            GPS sabe nossa localização. Imagine que você esteja em uma cidade que dista 100km 
+            de outra, que vamos chamar aqui de cidade 2. Uma situação possível é a 
+            seguinte:</p>
+
+            <div class="distancia_pontos">
+                <img src="distancia_um_ponto.png">
+            </div>
+            
+            <p>Mas concorda que a próxima configuração também é possível?</p>
+            
+            <div class="distancia_pontos">
+                <img src="distancia_um_ponto_config2.png">
+            </div>
+
+            <p>e a próxima também?</p>
+            
+            <div class="distancia_pontos">
+                <img src="distancia_um_ponto_config3.png">
+            </div>
+            
+            <p>Caso a ideia ainda esteja um pouco nebulosa, o que precisa entender é que a cidade
+            2 pode estar em qualquer posição da circunferência de raio 100km</p>
+            
+            <div class="distancia_pontos">
+                <img src="img/pontos_circunferencia.png">
+            </div>
+            
+            <p>Isto significa que saber a sua posição com relação a apenas uma cidade não é 
+            suficiente. Caso o GPS saiba a sua distância a uma outra cidade (cidade 3), 
+            as únicas localizações possíveis são as duas indicadas na figura</p>
+            
+            img6
 
             <section id="ligacao"></section>
             <h3>Ligação</h3>
