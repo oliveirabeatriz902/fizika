@@ -1,41 +1,81 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
 body{
     background-color: #F5F5F5;
-    font-family: Comic Sans MS, Helvetica, sans-serif;
-    width: 90%;
+    /*font-family: Comic Sans MS, Helvetica, sans-serif;*/
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
     display: block;
     margin: auto;
-    position: relative; /*AQUI*/
 }
 
-.menu_superior nav{
-    position: absolute;
-    margin-top: 10px;
+main{
+    margin-left: 20px;
+    margin-right: 200px;
+    width: 60%;
+    /*position: absolute;*/
+}
+
+.menu_superior a{
+    display: inline-block;
+    /*padding: 15px;*/
+    padding: 0px;
+    text-decoration: none;
 }
 
 .menu_superior li{
-    display: inline-block;
+    list-style: none;
     border: 1px solid rgba(0,0,0,0.3);
-    border-radius: 10px;
-    padding: 5px 20px;
-    margin-left: 10px;
+    /*border-radius: 10px;*/
     background-color: #29cbdb;
+    /*background-color: orange;*/
+    /*padding: 5px 15px;*/
+    padding: 10px 10px;
+    margin: 20px 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.botao_menu_superior a:hover{
-    background-color: aquamarine;
+.menu_superior li:hover{
+    background-color: rgba(0,0,0,0.8);
+    transition-duration: 0.4s;
+}
+
+.menu_superior{
+    overflow: auto;
+}
+
+.menu_superior ul{
+    float: right;
+    margin-right: 100px;
+}
+
+.menu_superior{
+    border: 1px solid rgba(0,0,0,0.1);
+    /*background-color: rgba(0,0,0,0.1);*/
+    background-color: #F5F5F5;
 }
 
 p{
-    font-family: Comic Sans MS, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 19px;
     text-align: justify;
     text-indent: 50px;
     color: black;
+    line-height: 1.5;
 }
 
 h3{
-    font-family: Comic Sans MS, Helvetica, sans-serif; 
+    font-family: Helvetica, Arial, sans-serif;
     color: #29cbdb;
+    margin: 0 0 20px 0;
 
 }
 
@@ -51,24 +91,38 @@ h3{
     margin: 0 auto;
 }
 
+figcaption{
+    text-align: center;
+}
+
 #introducao{
     margin-top: 50px;
 }
 
-.conteudo{
-    margin-left: 200px;
-    margin-right: 200px;
-    position: absolute;
+#camera{
+    margin-top: 50px;
+}
+
+#gps{
+    margin-top: 50px;
+}
+
+#ligacao{
+    margin-top: 50px;
+}
+
+h4{
+    margin: 20px 0;
+    color: #29cbdb;
 }
 
 h1{
-    text-align: center;
-    color: black;
+    color: rgb(38, 37, 37);
     font-size: 30px;
-    padding-left: 25px;
+    padding-left: 0px;
     width: 90%;
     position: relative;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .base_celular{
@@ -79,12 +133,13 @@ h1{
 
 .imagem_celular{
     position: relative;
+    margin-top: 50px;
 }
 
 .card_camera{
     position: absolute; /* define a posição absoluta para a imagem */
     top: 70px; /* posiciona a imagem no topo do elemento pai */
-    left: 320px; /* posiciona a imagem à esquerda do elemento pai */
+    left: 330px; /* posiciona a imagem à esquerda do elemento pai */
     z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
     width: 4%;
 }
@@ -92,7 +147,7 @@ h1{
 .card_gps{
     position: absolute; /* define a posição absoluta para a imagem */
     top: 70px; /* posiciona a imagem no topo do elemento pai */
-    left: 390px; /* posiciona a imagem à esquerda do elemento pai */
+    left: 400px; /* posiciona a imagem à esquerda do elemento pai */
     z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
     width: 4%;
 }
@@ -100,7 +155,7 @@ h1{
 .card_ligacao{
     position: absolute; /* define a posição absoluta para a imagem */
     top: 150px; /* posiciona a imagem no topo do elemento pai */
-    left: 355px; /* posiciona a imagem à esquerda do elemento pai */
+    left: 365px; /* posiciona a imagem à esquerda do elemento pai */
     z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
     width: 4%;
 }
@@ -118,8 +173,4 @@ h1{
 .card_ligacao:hover{
     border: 2px solid orange;
     border-radius: 6px;
-}
-
-a:hover{
-    background-color: orange;
 }
