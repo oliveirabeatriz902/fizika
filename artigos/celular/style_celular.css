@@ -12,14 +12,13 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     display: block;
-    margin: auto;
+    margin-bottom: 40px;
 }
 
 main{
     margin-left: 20px;
     margin-right: 200px;
     width: 60%;
-    /*position: absolute;*/
 }
 
 .menu_superior a{
@@ -100,7 +99,7 @@ figcaption{
 }
 
 #camera{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #gps{
@@ -125,39 +124,32 @@ h1{
     margin-top: 80px;
 }
 
-.base_celular{
-    width: 20%;
-    display: block;
-    margin: 0 auto;
+.wrapper{
+    position: relative;
+    margin-left: 200px;
 }
 
-.imagem_celular{
-    position: relative;
-    margin-top: 50px;
+.base_celular{
+    width: 25%;
 }
 
 .card_camera{
-    position: absolute; /* define a posição absoluta para a imagem */
-    top: 70px; /* posiciona a imagem no topo do elemento pai */
-    left: 330px; /* posiciona a imagem à esquerda do elemento pai */
-    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
-    width: 4%;
+    width: 6%;
+    margin: 60px 30px 100px 22px;
 }
 
 .card_gps{
-    position: absolute; /* define a posição absoluta para a imagem */
-    top: 70px; /* posiciona a imagem no topo do elemento pai */
-    left: 400px; /* posiciona a imagem à esquerda do elemento pai */
-    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
-    width: 4%;
+    width: 6%;
+    margin: 60px 10px 100px 85px;
 }
 
 .card_ligacao{
-    position: absolute; /* define a posição absoluta para a imagem */
-    top: 150px; /* posiciona a imagem no topo do elemento pai */
-    left: 365px; /* posiciona a imagem à esquerda do elemento pai */
-    z-index: 1; /* define a ordem de empilhamento para que fique por cima da outra imagem */
-    width: 4%;
+    width: 6%;
+    margin: 150px 50px 20px 55px;
+}
+
+.base_celular, .card_gps, .card_camera, .card_ligacao {
+    position: absolute;
 }
 
 .card_camera:hover{
@@ -174,3 +166,22 @@ h1{
     border: 2px solid orange;
     border-radius: 6px;
 }
+
+/*responsividade*/
+
+@media screen and (max-width: 768px){
+    main{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    main{
+        width: 90%;
+    }
+}
+
+
