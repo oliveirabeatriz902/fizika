@@ -179,6 +179,35 @@ h1{
     main{
         width: 90%;
     }
+
+    .menu_superior a{
+        display: block;
+        margin-top: 0;
+    }
+
+    .menu_superior li{
+        font-size: 20px;
+    }
+
+    .menu_superior ul{
+        margin-right: 4%;
+    }
+
+    .distancia_pontos img{
+        width: 90%;
+    }
+
+    .celular_completo{
+        width: 30%;
+    }
+
+    .satelites_orbitando_terra{
+        width: 80%;
+    }
+
+    p{
+        font-size: 23px;
+    }
+
+
 }
-
-
