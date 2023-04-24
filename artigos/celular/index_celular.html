@@ -16,20 +16,34 @@
 
     <body>
         
-        <header class="menu_superior">
-            <nav>
-                <ul>
-                    <a>
-                        <li href="#" class="botao_menu_superior">Página Inicial</li>
-                    </a>
-                    <a>
-                        <li href="#" class="botao_menu_superior">Artigos</li>
-                    </a>
-                    <a>
-                        <li href="#" class="botao_menu_superior">Contato</li>
-                    </a>
-                </ul>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <img src="img/logo-fizika.png" width="100px">
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                    </ul>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="img/menu-aberto.png" alt="" width="40"></button>
+                </div>
+    
             </nav>
+    
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+    
+            </div>
+    
         </header>
 
         <main>
@@ -179,6 +193,6 @@
             </section>  
     
         </main>
-
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
