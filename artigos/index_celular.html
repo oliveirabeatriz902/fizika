@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/logo-fizika.png" width="100px">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu-aberto.png" alt="" width="40"></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <button class="botao-explorar"><a href="#" class="link-explorar">Explore a Física</a></button>
+
+    <main>
+            
+        <h1>Como a Física explica o celular?</h1>
+        <br>
+        <section id="introducao">
+        
+            <p>O celular é provavelmente o aparelho mais presente em nossas vidas. Utilizamos-o para
+            realizar diversas tarefas cotidianas, como acordar com o alarme, jogar, manter contato com amigos e familiares e
+            assistir vídeos, filmes e séries. Apesar de sua relevância, muitas pessoas ainda não entendem como estes
+            dispositivos funcionam. Neste artigo, vamos explorar como a física explica algumas das funcionalidades do
+            celular, tais como o GPS, chamadas telefônicas, câmera e tela. Além disso, destacaremos o papel da Mecânica
+            Quântica na criação de dispositivos eletrônicos avançados. Clique nos ícones do celular
+            para navegar nos assuntos</p>
+            <br>
+            
+            <img src="assets/img/celular_completo.png" class="celular_completo" alt="Celular para navegação">
+
+        </section>
+
+        <section id="camera">
+            <h3>Câmera</h3>
+            
+            <p>Texto câmera aqui</p>
+        </section>
+
+        <section id="gps">
+            <h3>GPS</h3>
+
+            <p>Você já se perguntou como o GPS sabe exatamente onde estamos? Independentemente
+            de sua resposta, é muito provável que já tenha utilizado o GPS para viajar, 
+            ir a um restaurante, parque ou qualquer outro lugar desconhecido. Esta 
+            tecnologia se tornou essencial em nossas vidas e é útil tanto para pedestres 
+            quanto para motoristas. Neste artigo vamos entender como a Física explica o 
+            funcionamente deste dispositivo super importante. Pode até parecer mágica, 
+            mas é simplesmente ciência!
+
+            <h4>Entendendo o GPS</h4>
+            
+            <p>O termo GPS vem do inglês <em>Global Positioning System</em>, que significa 
+            Sistema de Posicionamento Global, no qual 24 satélites orbitam a Terra, 
+            fornececendo sinais constantemente para o seu celular, por exemplo, fazendo 
+            com que o mesmo seja capaz de calcular sua posição no globo terrestre.</p>
+            
+            <figure>
+                <img src="assets/img/satelites_orbitando_terra.png" class="satelites_orbitando_terra" alt="Satélites orbitando a Terra">
+                <figcaption>Satélites orbitando a Terra</figcaption>
+            </figure>
+            <br>
+            <p>Agora vamos introduzir um pouco de matemática para começar a entender como o 
+            GPS sabe nossa localização. Imagine que você esteja em uma cidade que dista 100km 
+            de outra, que vamos chamar aqui de cidade 2. Uma situação possível é a 
+            seguinte:</p>
+
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/distancia_um_ponto.png" alt="Distância a uma cidade">
+                    <figcaption>Distância a apenas uma cidade</figcaption>
+                </div>
+            </figure>
+            <br>
+            
+            <p>Mas concorda que a próxima configuração também é possível?</p>
+
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/distancia_um_ponto_config2.png" alt="Distância a uma cidade com segunda configuração">
+                    <figcaption>Distância a mesma cidade com segunda configuração</figcaption>
+                </div>
+            </figure>
+            <br>
+
+            <p>e a próxima também?</p>
+
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/distancia_um_ponto_config3.png" alt="Distância a uma cidade com terceira configuração">
+                    <figcaption>Distância a mesma cidade com terceira configuração</figcaption>
+                </div>
+            </figure>
+            <br>
+            
+            <p>Caso a ideia ainda esteja um pouco nebulosa, o que precisa entender é que a cidade
+            2 pode estar em qualquer posição da circunferência de raio 100km</p>
+
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/pontos_circunferencia.png" alt="Possíveis distâncias com relação a cidade 2">
+                    <figcaption>Distâncias possíveis da cidade 2</figcaption>
+                </div>
+            </figure>
+            <br>
+            
+            <p>Isto significa que saber a sua posição com relação a apenas uma cidade não é 
+            suficiente. Caso o GPS saiba a sua distância a mais outra cidade (cidade 3), que dista
+            90km, por exemplo, as únicas localizações possíveis são as duas indicadas na figura</p>
+            
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/distancia_duas_cidades.png" alt="Possíveis distâncias com relação a duas cidades">
+                    <figcaption>Possíveis distâncias com relação a duas cidades</figcaption>
+                </div>
+            </figure>
+            <br>
+
+            <p>Ou seja, não é possível que sua localização seja outra além das duas indicadas,
+            pois a condição de estar distante 90km de uma cidade e 100km de outra ao mesmo tempo
+            não seria satisfeita. Percebeu que ao saber a sua distância com relação a duas cidades diminuiu
+            o número de possibilidades para dois? Quais serão então as possibilidades de localização caso seja
+            conhecida a sua distância com relação a mais uma cidade (cidade 4), que dista 110km, por exemplo? 
+            Observe a figura a seguir:
+            </p>
+            <br>
+            <p>Mas para descobrir sua exata localização, o GPS precisa saber sua distância com relação a
+            mais uma cidade. A imagem a seguir mostra que há apenas uma localização possível caso
+            se saiba sua distância com relação a 3 cidades</p>
+
+            <figure>
+                <div class="distancia_pontos">
+                    <img src="assets/img/distancia_tres_cidades.png" alt="ünica localização possível com relação a três cidades">
+                    <figcaption>Única localização possível com relação a três cidades</figcaption>
+                </div>
+            </figure>
+            <br>
+
+            <p>Desta forma, sabendo a sua distância a 3 cidades, haverá apenas um local onde você
+            poderá estar. É assim que o GPS sabe exatamente onde você está!</p>
+            <br>
+            <p>Além dessas informações, o GPS também consegue calcular a sua distância ao do 
+            satélite. Isto é possível pois o satélite e o GPS possuem relógios extremamente 
+            precisos, no qual um envia ao outro sinais que fornecem a hora. Mas talvez você 
+            esteja se perguntando: "A hora que o satélite e o GPS vão marcar não é a mesma?". 
+            Aí que está a questão! Sabe-se que o sinal enviado pelo satélite ao GPS viaja com a 
+            velocidade da luz, só que mesmo esta velocidade sendo altíssima (300000000 m/s), 
+            o sinal não chega de forma instantânea. E é com esse pequeno intervalo de tempo que 
+            o sinal leva para chegar até o GPS, que é possível determinar a distância entre os
+            mesmos. Incrível, não?! </p>
+            <br>
+        </section>
+
+
+        <br>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
