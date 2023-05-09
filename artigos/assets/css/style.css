@@ -129,6 +129,18 @@ h4{
     margin-top: 30px;
 }
 
+.lente_convergente{
+    width: 60%;
+    display: block;
+    margin: 5% auto;
+}
+
+.obturador{
+    width: 20%;
+    display: block;
+    margin: 5% auto;
+}
+
 #gps{
     margin-top: 50px;
 }
@@ -474,11 +486,13 @@ footer {
         font-size: 20px;
     }
 
-    #footer_content {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+    .lente_convergente{
+        width: 90%;
     }
 
+    .obturador{
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 426px) {
