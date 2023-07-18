@@ -1,4 +1,8 @@
 /*zerando padding e margin de todos os elementos*/
+:root{
+    --black:#444;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,20 +11,19 @@
 }
 
 header {
-    background-color: #F5F5F5;
+    background-color: white;
     box-shadow: 0px 3px 10px #dddada;
 }
 
-#linkLogo:hover{
-    border: 2px solid orange;
+#linkLogo{
     padding: 3px;
-    border-radius: 10px;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
+    color: var(--black);
 }
 
 .logo {
@@ -51,7 +54,6 @@ header {
     text-decoration: none;
     font-size: 1.15rem;
     color: #fff;
-    font-weight: 550;
     color: rgb(44, 43, 43);
 }
 
@@ -95,7 +97,7 @@ h1{
 
 body{
     background-color: #F5F5F5;
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     display: block;
 }
@@ -106,7 +108,7 @@ main{
 }
 
 p{
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 19px;
     text-align: justify;
     text-indent: 50px;
@@ -121,7 +123,7 @@ p{
 }
 
 h3{
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #29cbdb;
     margin: 0 0 20px 0;
 
@@ -169,7 +171,23 @@ figcaption{
 }
 
 .nav-link:hover {
-    color: #29cbdb;
+    color: orange;
+}
+
+/* FOOTER */
+
+.footer .credit{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+    color: orange;
 }
 
 @media screen and (max-width: 730px) {
